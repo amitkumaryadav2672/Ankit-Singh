@@ -36,10 +36,10 @@ app.post("/send-email", async (req, res) => {
 
     // Auto-reply to Visitor
     let mailOptionsVisitor = {
-      from: `"Amit Kumar Yadav" <${process.env.EMAIL_USER}>`,
+      from: `"Ankit Singh" <${process.env.EMAIL_USER}>`,
       to: email,
-      subject: `Thank you for contacting Amit Kumar Yadav`,
-      text: `Hi ${name},\n\nThank you for reaching out! I have received your message and will get back to you as soon as possible.\n\nBest regards,\nAmit Kumar Yadav\n+91-6287534350`,
+      subject: `Thank you for contacting Ankit Singh`,
+      text: `Hi ${name},\n\nThank you for reaching out! I have received your message and will get back to you as soon as possible.\n\nBest regards,\nAnkit Singh\n+91-7275003033\nGurugram, Haryana, India`,
     };
 
     await transporter.sendMail(mailOptionsOwner);
@@ -59,7 +59,8 @@ app.listen(PORT, () => {
   // Self-ping to keep the server awake (Render Free Tier)
   setInterval(() => {
     const https = require("https");
-    https.get("https://amit-kumar-yadav-jlff.onrender.com/", (res) => {
+    const pingUrl = process.env.RENDER_EXTERNAL_URL || "https://amit-kumar-yadav-jlff.onrender.com/";
+    https.get(pingUrl, (res) => {
       console.log("Self-ping successful: Server is awake!");
     }).on("error", (e) => {
       console.error("Self-ping failed:", e.message);

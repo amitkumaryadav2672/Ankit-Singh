@@ -5,17 +5,13 @@ import './Skills.css';
 
 const Skills = () => {
   const skills = [
-    { category: 'Languages', items: ['Python', 'Java', 'JavaScript (ES6+)', 'SQL'], icon: <Code size={20} />, color: 'skill-cyan-emerald' },
-    { category: 'Data Science', items: ['Data Collection', 'Data Cleaning', 'Data Preprocessing', 'Exploratory Data Analysis (EDA)', 'Data Analysis', 'Feature Engineering', 'Statistical Analysis', 'Machine Learning', 'Model Evaluation', 'Data Validation', 'Documentation'], icon: <Brain size={20} />, color: 'skill-pink-rose' },
-    { category: 'Python Libraries', items: ['Pandas', 'NumPy', 'Scikit-learn', 'Matplotlib'], icon: <Layers size={20} />, color: 'skill-cyan-blue' },
-    { category: 'Frontend', items: ['HTML', 'CSS', 'Tailwind CSS', 'React.js'], icon: <Layout size={20} />, color: 'skill-cyan-blue' },
-    { category: 'Backend', items: ['Node.js', 'Express.js', 'RESTful APIs', 'JWT Authentication'], icon: <Server size={20} />, color: 'skill-blue-purple' },
-    { category: 'AI / Generative AI', items: ['LLMs', 'LangChain', 'RAG', 'Prompt Engineering', 'OpenAI API', 'Gemini API', 'Hugging Face', 'FAISS Vector Database'], icon: <Cpu size={20} />, color: 'skill-pink-rose' },
-    { category: 'Frameworks', items: ['FastAPI', 'Streamlit', 'React.js', 'Express.js', 'Tailwind CSS'], icon: <Terminal size={20} />, color: 'skill-blue-purple' },
-    { category: 'Databases', items: ['MongoDB', 'MySQL', 'FAISS Vector Database', 'Redis'], icon: <Database size={20} />, color: 'skill-orange-rose' },
-    { category: 'Data Visualization', items: ['Power BI', 'Tableau', 'Matplotlib'], icon: <BarChart2 size={20} />, color: 'skill-cyan-emerald' },
-    { category: 'Tools', items: ['Git', 'GitHub', 'Docker', 'Postman', 'VS Code', 'Jupyter Notebook', 'Vercel', 'Render'], icon: <Settings size={20} />, color: 'skill-indigo' },
-    { category: 'Core CS', items: ['DSA (225+ Solved)', 'OOPs', 'DBMS'], icon: <BookOpen size={20} />, color: 'skill-pink-rose' }
+    { category: 'Web Technologies', items: ['React.js', 'Node.js', 'Express.js', 'HTML5', 'CSS3', 'Bootstrap', 'EJS', 'JSON', 'JWT', 'Middleware'], icon: <Layout size={20} />, color: 'skill-cyan-blue' },
+    { category: 'Programming Languages', items: ['Java', 'JavaScript', 'C++', 'SQL', 'Object Oriented Programming (OOP)'], icon: <Code size={20} />, color: 'skill-cyan-emerald' },
+    { category: 'Databases', items: ['MongoDB', 'Mongoose', 'MySQL', 'SQL'], icon: <Database size={20} />, color: 'skill-orange-rose' },
+    { category: 'API & Backend Engineering', items: ['REST APIs', 'CRUD Operations', 'API Integration', 'Authentication & Authorization', 'JWT', 'Multer'], icon: <Server size={20} />, color: 'skill-blue-purple' },
+    { category: 'Tools & Platforms', items: ['Git', 'GitHub', 'Postman', 'Visual Studio Code', 'npm'], icon: <Settings size={20} />, color: 'skill-indigo' },
+    { category: 'Core Knowledge & CS', items: ['Data Structures & Algorithms', 'DBMS', 'OOP', 'SDLC', 'Agile Methodologies'], icon: <BookOpen size={20} />, color: 'skill-pink-rose' },
+    { category: 'Soft Skills', items: ['Problem-Solving', 'Analytical Thinking', 'Communication', 'Teamwork', 'Adaptability', 'Time Management'], icon: <Brain size={20} />, color: 'skill-pink-rose' }
   ];
 
   const containerVariants = {

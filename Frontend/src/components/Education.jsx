@@ -5,21 +5,19 @@ import './Education.css';
 const Education = () => {
   const achievements = [
     {
-      title: 'Software Developer Intern',
-      subtitle: 'WebSeeder Technologies Pvt. Ltd.',
-      date: 'Apr 2026 – June 2026',
+      title: 'MERN Stack Development Internship',
+      subtitle: 'ThinkNEXT Technologies — Chandigarh, IN',
+      date: '02/2026 – 07/2026',
       desc: [
-        'Developed full-stack web applications using React.js, Node.js, Express.js, MongoDB.',
-        'Built responsive UI, integrated REST APIs, and managed authentication/database operations.',
-        'Worked on Redis Cache optimization, Git/GitHub collaboration, debugging, and bug fixing.'
+        'Developed and supported full-stack web applications using React.js, JavaScript, Node.js, Express.js, MongoDB, and REST APIs.',
+        'Implemented CRUD operations, JWT authentication, middleware, API integration, data validation, and error handling to build reliable application workflows.',
+        'Used Git/GitHub, Postman, and debugging practices while following software development and testing principles.'
       ]
     }
   ];
 
   const education = [
-    { degree: 'B.Tech, Computer Science Engineering', school: 'Chandigarh Engineering College Landran, Mohali', date: '2022 - 2026', score: 'CGPA: 7.5/10' },
-    { degree: 'Intermediate (B.S.E.B)', school: 'B.S.E.B', date: '2020 - 2021', score: '80.08%' },
-    { degree: 'Matriculation (B.S.E.B)', school: 'B.S.E.B', date: '2018 - 2019', score: '80.02%' }
+    { degree: 'Bachelor of Technology (BTECH) — CSE', school: 'Chandigarh Group of Colleges, Mohali', date: '06/2022 – 07/2026', score: 'CGPA: 7.7 / 10' }
   ];
 
   return (

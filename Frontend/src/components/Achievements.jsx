@@ -5,22 +5,23 @@ import './Education.css'; // Reuse timeline styling
 const Achievements = () => {
   const achievements = [
     {
-      title: 'Academic Achievements & Certifications',
-      subtitle: 'Coding & Certifications',
+      title: 'Professional Certifications',
+      subtitle: 'Technical Validation & Training',
       desc: [
-        'GeeksforGeeks Rank: 24th at CEC, Mohali',
-        'Solved 225+ DSA problems on LeetCode & GFG',
-        'MERN Full Stack Development Certification',
-        'DSA (Java) & SQL Certifications'
+        'Java Programming — GeeksforGeeks (Feb. 2025)',
+        'SQL for Beginners — Scaler Academy (May. 2025)',
+        'MERN Stack Development Certification — ThinkNEXT Technologies (2026)',
+        'Full Stack Web Development & Database Architecture'
       ]
     },
     {
-      title: 'Extra-Curricular Achievements',
-      subtitle: 'Hackathons & Leadership',
+      title: 'Academic & Technical Highlights',
+      subtitle: 'Chandigarh Group of Colleges Mohali & Projects',
       desc: [
-        'Secured 3rd position in D4 (Google) Hackathon 2023 at CGC Jhanjeri',
-        'Participated in Smart India Hackathon (SIH) 2024 with real-world problem solving',
-        'Coordinated multiple college events, demonstrating teamwork and leadership'
+        'Maintained a strong academic record with 7.7 CGPA in B.Tech CSE',
+        'Built full-stack production-ready applications including Airbnb-style Home Rental & Incident Management platforms',
+        'Deep understanding of RESTful API design, database schemas, and JWT-secured workflows',
+        'Proven problem-solving skills in Object-Oriented Programming, DSA, and agile team collaboration'
       ]
     }
   ];

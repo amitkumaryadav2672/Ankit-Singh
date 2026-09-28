@@ -68,7 +68,8 @@ const Contact = () => {
     }, 4000);
 
     try {
-      await axios.post("https://amit-kumar-yadav-jlff.onrender.com/send-email", {
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || (window.location.hostname === 'localhost' ? 'http://localhost:5000/send-email' : 'https://amit-kumar-yadav-jlff.onrender.com/send-email');
+      await axios.post(backendUrl, {
         name: formState.name,
         email: formState.email,
         message: formState.message
@@ -195,31 +196,31 @@ const Contact = () => {
         >
           <h3>Let's build something scalable.</h3>
           <p className="contact-desc">
-            With over 225+ DSA problems solved and strong expertise in Java, Node.js, React, and databases, I'm ready to tackle complex challenges and build impactful systems.
+            B.Tech CSE graduate and MERN Stack Developer skilled in React.js, Node.js, Express.js, MongoDB, REST APIs, and database engineering. Ready to build scalable and reliable web applications.
           </p>
 
           <div className="info-items">
             <a 
-              href="mailto:yadavamit847412@gmail.com?subject=Let's discuss an opportunity&body=Let's discuss an opportunity" 
+              href="mailto:ankitsingh1234mgs@gmail.com?subject=Let's discuss an opportunity&body=Let's discuss an opportunity" 
               title="Click to send an email" 
               className="info-item"
             >
               <div className="info-icon"><Mail size={20} /></div>
               <div className="info-content">
                 <h4>Email</h4>
-                <p>yadavamit847412@gmail.com</p>
+                <p>ankitsingh1234mgs@gmail.com</p>
               </div>
             </a>
 
             <a 
-              href="tel:+916287534350" 
+              href="tel:+917275003033" 
               title="Click to call" 
               className="info-item"
             >
               <div className="info-icon"><Phone size={20} /></div>
               <div className="info-content">
                 <h4>Phone</h4>
-                <p>+91-6287534350</p>
+                <p>+91-7275003033</p>
               </div>
             </a>
 
@@ -227,14 +228,14 @@ const Contact = () => {
               <div className="info-icon"><MapPin size={20} /></div>
               <div className="info-content">
                 <h4>Location</h4>
-                <p>Madhubani, Bihar, India (847409)</p>
+                <p>Gurugram, Haryana, India</p>
               </div>
             </motion.div>
           </div>
 
           <motion.div variants={itemVariants} className="social-links-contact">
-            <a href="https://www.linkedin.com/in/amit-kumar-yadav-52a56529a/" target="_blank" rel="noreferrer" className="social-btn glass-panel"><Linkedin size={22} /></a>
-            <a href="https://github.com/amitkumaryadav2672" target="_blank" rel="noreferrer" className="social-btn glass-panel"><Github size={22} /></a>
+            <a href="https://www.linkedin.com/in/ankit-s-a812aa372" target="_blank" rel="noreferrer" className="social-btn glass-panel" aria-label="LinkedIn"><Linkedin size={22} /></a>
+            <a href="https://github.com/AnkitSingh727" target="_blank" rel="noreferrer" className="social-btn glass-panel" aria-label="GitHub"><Github size={22} /></a>
           </motion.div>
         </motion.div>
 
@@ -287,7 +288,7 @@ const Contact = () => {
                 value={formState.message}
                 onChange={handleChange}
                 onBlur={handleBlur}
-                placeholder="Hi Amit, I have an opportunity..."
+                placeholder="Hi Ankit, I have an opportunity..."
                 className={errors.message ? 'input-error' : ''}
                 required
               ></textarea>

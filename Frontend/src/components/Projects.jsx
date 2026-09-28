@@ -9,6 +9,37 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'Home Rental & Booking Platform',
+      role: 'Full Stack Developer (MERN)',
+      duration: 'React.js — Node.js — Express.js — MongoDB',
+      description: [
+        'Developed an Airbnb-style rental booking platform using React.js with property listings, search, authentication, booking, and responsive frontend functionality.',
+        'Built RESTful APIs and CRUD operations using Node.js and Express.js, with MongoDB/Mongoose for database management and JSON-based data handling.',
+        'Implemented JWT authentication, session management, Multer image uploads, middleware, validation, and error handling for secure application workflows.',
+        'Tested and debugged APIs using Postman, following Git/GitHub version-control practices for full-stack development.'
+      ],
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'JWT', 'Multer', 'Postman'],
+      github: 'https://github.com/AnkitSingh727',
+      live: '#',
+      color: '#06b6d4',
+      icon: <Code size={24} color="#06b6d4" />
+    },
+    {
+      title: 'Enterprise Incident Management System',
+      role: 'Full Stack Developer (MERN)',
+      duration: 'React.js — Node.js — Express.js — MongoDB',
+      description: [
+        'Developed a full-stack incident management platform using React.js, Node.js, Express.js, and MongoDB to manage incident creation, assignment, priority, status tracking, and resolution.',
+        'Implemented RESTful APIs, JWT authentication, role-based access control, CRUD operations, validation, middleware, and error handling for secure and scalable application workflows.',
+        'Architected clean workflows and robust error-handling pipelines to ensure high availability and data integrity.'
+      ],
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'JWT', 'RBAC', 'Postman'],
+      github: 'https://github.com/AnkitSingh727',
+      live: '#',
+      color: '#8b5cf6',
+      icon: <Layers size={24} color="#8b5cf6" />
+    },
+    {
       title: 'Trimly – Salon at Home Platform',
       role: 'Full Stack Developer',
       duration: '90 Days',
@@ -17,7 +48,7 @@ const Projects = () => {
         'Developed booking system, Admin Dashboard, Provider Panel, and payment integration.'
       ],
       tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
-      github: 'https://github.com/amitkumaryadav2672/Trimly-SALON-AT-HOME',
+      github: 'https://github.com/AnkitSingh727',
       live: 'https://trimly-salon-at-home.vercel.app/',
       color: '#10b981',
       icon: <Code size={24} color="#10b981" />
@@ -32,7 +63,7 @@ const Projects = () => {
         'Implemented secure authentication and scalable backend APIs.'
       ],
       tech: ['React.js', 'Node.js', 'Express.js', 'Gemini API'],
-      github: 'https://github.com/amitkumaryadav2672/VivaMate-AI',
+      github: 'https://github.com/AnkitSingh727',
       live: 'https://viva-mate-ai.vercel.app/',
       color: '#6366f1',
       icon: <Layers size={24} color="#6366f1" />
@@ -47,7 +78,7 @@ const Projects = () => {
         'Managed media assets using Cloudinary and database operations with MongoDB.'
       ],
       tech: ['MERN Stack', 'Clerk Auth', 'Gemini AI', 'Clipdrop', 'Cloudinary', 'Tailwind CSS'],
-      github: 'https://github.com/amitkumaryadav2672/Quick-Ai',
+      github: 'https://github.com/AnkitSingh727',
       live: 'https://quick-ai-swart-phi.vercel.app/',
       color: '#eab308',
       icon: <Terminal size={24} color="#eab308" />
@@ -62,7 +93,7 @@ const Projects = () => {
         'Built REST APIs and optimized MySQL queries for efficient data management.'
       ],
       tech: ['React.js', 'Python', 'Flask', 'MySQL', 'SQL'],
-      github: 'https://github.com/amitkumaryadav2672',
+      github: 'https://github.com/AnkitSingh727',
       live: '#',
       color: '#c084fc',
       icon: <Database size={24} color="#c084fc" />
@@ -77,7 +108,7 @@ const Projects = () => {
         'Designed REST APIs and optimized SQL queries for fast payroll processing.'
       ],
       tech: ['React.js', 'Python', 'Flask', 'MySQL', 'SQL'],
-      github: 'https://github.com/amitkumaryadav2672',
+      github: 'https://github.com/AnkitSingh727',
       live: '#',
       color: '#38bdf8',
       icon: <Terminal size={24} color="#38bdf8" />
@@ -92,7 +123,7 @@ const Projects = () => {
         'Designed REST APIs, optimized retrieval pipelines, and improved response quality through efficient context retrieval and prompt optimization.'
       ],
       tech: ['Python', 'LangChain', 'Gemini 1.5 Pro', 'FastAPI', 'FAISS', 'RAG'],
-      github: 'https://github.com/amitkumaryadav2672',
+      github: 'https://github.com/AnkitSingh727',
       live: '#',
       color: '#10b981',
       icon: <Code size={24} color="#10b981" />
@@ -106,7 +137,7 @@ const Projects = () => {
         'Implemented conversation memory, Retrieval-Augmented Generation (RAG), REST APIs, and intelligent context-aware response generation.'
       ],
       tech: ['Python', 'GPT-4o', 'LangChain', 'FastAPI', 'RAG'],
-      github: 'https://github.com/amitkumaryadav2672',
+      github: 'https://github.com/AnkitSingh727',
       live: '#',
       color: '#ec4899',
       icon: <Layers size={24} color="#ec4899" />
@@ -120,7 +151,7 @@ const Projects = () => {
         'Developed a FastAPI backend with Streamlit frontend using LangChain, RAG, and FAISS Vector Database.'
       ],
       tech: ['Python', 'FastAPI', 'Streamlit', 'LangChain', 'RAG', 'FAISS'],
-      github: 'https://github.com/amitkumaryadav2672',
+      github: 'https://github.com/AnkitSingh727',
       live: '#',
       color: '#eab308',
       icon: <Terminal size={24} color="#eab308" />
@@ -134,7 +165,7 @@ const Projects = () => {
         'Performed data cleaning, preprocessing, exploratory data analysis (EDA), and advanced SQL analysis using joins, aggregations, and window functions to generate actionable business insights.'
       ],
       tech: ['Python', 'MySQL', 'Power BI', 'SQL'],
-      github: 'https://github.com/amitkumaryadav2672',
+      github: 'https://github.com/AnkitSingh727',
       live: '#',
       color: '#8b5cf6',
       icon: <BarChart2 size={24} color="#8b5cf6" />

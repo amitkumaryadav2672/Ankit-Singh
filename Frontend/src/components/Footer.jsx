@@ -7,16 +7,16 @@ const Footer = () => {
     <footer className="footer glass-panel">
       <div className="footer-content">
         <div className="footer-left">
-          &copy; 2026 Mr. Amit Kumar Yadav. All rights reserved.
+          &copy; 2026 Ankit Singh. All rights reserved.
         </div>
         <div className="footer-middle">
-          <a href="https://github.com/amitkumaryadav2672" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <a href="https://github.com/AnkitSingh727" target="_blank" rel="noreferrer" aria-label="GitHub">
             <Github size={20} />
           </a>
-          <a href="https://www.linkedin.com/in/amit-kumar-yadav-52a56529a/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/ankit-s-a812aa372" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <Linkedin size={20} />
           </a>
-          <a href="mailto:yadavamit847412@gmail.com?subject=Let's discuss an opportunity&body=Let's discuss an opportunity" aria-label="Email">
+          <a href="mailto:ankitsingh1234mgs@gmail.com?subject=Let's discuss an opportunity&body=Let's discuss an opportunity" aria-label="Email">
             <Mail size={20} />
           </a>
         </div>

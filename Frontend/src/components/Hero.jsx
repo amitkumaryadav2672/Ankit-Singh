@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Download, Mail, Github, Linkedin, Briefcase, Award, Code2 } from 'lucide-react';
-import profileImg from '../assets/amit.jpeg';
+import profileImg from '../assets/ankit.jpg';
 import './Hero.css';
 
 const Hero = () => {
   const titles = [
+    "MERN Stack Developer",
     "Full Stack Developer",
-    "Software Engineer",
     "Software Developer",
-    "AI Developer",
-    "AI Engineer",
-    "Data Scientist"
+    "Node.js & Express.js Engineer",
+    "React.js Specialist"
   ];
 
   const [index, setIndex] = useState(0);
@@ -24,9 +23,9 @@ const Hero = () => {
   }, []);
 
   const stats = [
-    { label: 'DSA Problems', value: '225+', icon: <Code2 size={20} /> },
-    { label: 'Projects', value: '12+', icon: <Award size={20} /> },
-    { label: 'Hackathons', value: '3rd Place', icon: <Briefcase size={20} /> }
+    { label: 'Internship', value: 'ThinkNEXT', icon: <Briefcase size={20} /> },
+    { label: 'B.Tech CGPA', value: '7.7', icon: <Award size={20} /> },
+    { label: 'Projects Built', value: '10+', icon: <Code2 size={20} /> }
   ];
 
   return (
@@ -48,7 +47,7 @@ const Hero = () => {
         <div className="image-frame glass-panel">
           <img
             src={profileImg}
-            alt="Amit Kumar Yadav"
+            alt="Ankit Singh"
             className="large-profile-img"
           />
         </div>
@@ -62,7 +61,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="hero-badge glass-panel"
         >
-          <span className="pulse-dot"></span> Seeking Software Engineer / Developer Roles
+          <span className="pulse-dot"></span> Seeking Entry-Level MERN / Full Stack Developer Roles
         </motion.div>
 
         <motion.h1
@@ -71,7 +70,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="hero-title"
         >
-          Hi, I'm <span className="gradient-text">Amit Kumar Yadav</span><br />
+          Hi, I'm <span className="gradient-text">Ankit Singh</span><br />
           <div className="rotating-title-container">
             <AnimatePresence mode="wait">
               <motion.span
@@ -94,7 +93,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="hero-subtitle"
         >
-          Seeking an internship or entry-level Software Engineer role. Computer Science Engineering undergraduate with strong knowledge of Python, Java, SQL, Data Structures & Algorithms, and database management. Experienced in React.js, Node.js, Express.js, and MongoDB.
+          B.Tech CSE graduate (2026) seeking an entry-level MERN Stack / Full Stack Developer position with strong skills in React.js, JavaScript, Node.js, Express.js, MongoDB, REST APIs, HTML, and CSS. Eager to apply software development skills, build scalable web applications, and contribute to organizational growth.
         </motion.p>
 
         {/* Stats Section */}
@@ -127,7 +126,7 @@ const Hero = () => {
           <a href="#projects" className="btn btn-secondary">
             View Projects
           </a>
-          <a href="/Amit Kumar Yadav.pdf" download="Amit_Kumar_Yadav_Resume.pdf" className="btn btn-outline">
+          <a href="/Ankit Singh Resume.pdf" download="Ankit_Singh_Resume.pdf" className="btn btn-outline">
             Resume <Download size={18} />
           </a>
         </motion.div>
@@ -139,9 +138,9 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <a href="https://www.linkedin.com/in/amit-kumar-yadav-52a56529a/" target="_blank" rel="noreferrer" className="social-icon-link"><Linkedin size={22} /></a>
-          <a href="https://github.com/amitkumaryadav2672" target="_blank" rel="noreferrer" className="social-icon-link"><Github size={22} /></a>
-          <a href="mailto:yadavamit847412@gmail.com?subject=Let's discuss an opportunity&body=Let's discuss an opportunity" className="social-icon-link" aria-label="Send Email"><Mail size={22} /></a>
+          <a href="https://www.linkedin.com/in/ankit-s-a812aa372" target="_blank" rel="noreferrer" className="social-icon-link" aria-label="LinkedIn"><Linkedin size={22} /></a>
+          <a href="https://github.com/AnkitSingh727" target="_blank" rel="noreferrer" className="social-icon-link" aria-label="GitHub"><Github size={22} /></a>
+          <a href="mailto:ankitsingh1234mgs@gmail.com?subject=Let's discuss an opportunity&body=Let's discuss an opportunity" className="social-icon-link" aria-label="Send Email"><Mail size={22} /></a>
         </motion.div>
       </div>
     </motion.section>

@@ -66,7 +66,7 @@ const Navbar = () => {
         animate={{ opacity: 1, x: 0 }}
         className="logo gradient-text"
       >
-        <a href="#home" onClick={(e) => scrollToSection(e, '#home')} style={{ color: 'inherit', textDecoration: 'none' }}>AMIT KUMAR YADAV</a>
+        <a href="#home" onClick={(e) => scrollToSection(e, '#home')} style={{ color: 'inherit', textDecoration: 'none' }}>ANKIT SINGH</a>
       </motion.div>
 
       <nav className="nav-desktop">
