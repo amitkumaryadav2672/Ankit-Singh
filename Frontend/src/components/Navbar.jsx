@@ -1,26 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Github, Linkedin, Sun, Moon } from 'lucide-react';
-import { NavLink } from 'react-router-dom';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('portfolio-theme') || 'dark';
+  });
 
   useEffect(() => {
-    // Check local storage for theme
-    const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
-    setTheme(savedTheme);
-    document.documentElement.setAttribute('data-theme', savedTheme);
-  }, []);
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
 
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
     localStorage.setItem('portfolio-theme', newTheme);
-    document.documentElement.setAttribute('data-theme', newTheme);
   };
 
   useEffect(() => {

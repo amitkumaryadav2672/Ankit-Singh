@@ -20,7 +20,7 @@ const Hero = () => {
       setIndex((prevIndex) => (prevIndex + 1) % titles.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [titles.length]);
 
   const stats = [
     { label: 'Internship', value: 'ThinkNEXT', icon: <Briefcase size={20} /> },
