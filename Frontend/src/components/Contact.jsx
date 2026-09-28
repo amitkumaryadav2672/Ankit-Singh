@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Phone, MapPin, Linkedin, Github, Send } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
-  // ... (form state and validation remain the same)
   const [formState, setFormState] = useState({
     name: '',
     email: '',
@@ -16,7 +14,6 @@ const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const validateForm = () => {
-    // ... (logic remains same)
     let isValid = true;
     const newErrors = { name: '', email: '', message: '' };
 
@@ -55,42 +52,24 @@ const Contact = () => {
     return isValid;
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (!validateForm()) return;
 
     setIsSubmitting(true);
     setErrors(prev => ({ ...prev, submit: '' }));
 
-    // Show "Waking up" message only if it takes more than 4 seconds
-    const wakingUpTimeout = setTimeout(() => {
-      setErrors(prev => ({ ...prev, submit: "Server is waking up. Please wait a moment..." }));
-    }, 4000);
-
-    try {
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || (window.location.hostname === 'localhost' ? 'http://localhost:5000/send-email' : 'https://amit-kumar-yadav-jlff.onrender.com/send-email');
-      await axios.post(backendUrl, {
-        name: formState.name,
-        email: formState.email,
-        message: formState.message
-      });
-
-      clearTimeout(wakingUpTimeout);
+    setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
+
+      const subject = encodeURIComponent(`Portfolio Inquiry from ${formState.name}`);
+      const body = encodeURIComponent(`Name: ${formState.name}\nEmail: ${formState.email}\n\nMessage:\n${formState.message}`);
+      window.location.href = `mailto:ankitsingh1234mgs@gmail.com?subject=${subject}&body=${body}`;
+
       setFormState({ name: '', email: '', message: '' });
       setTimeout(() => setIsSubmitted(false), 5000);
-    } catch (error) {
-      clearTimeout(wakingUpTimeout);
-      console.error("Failed to send email.", error);
-      setIsSubmitting(false);
-      
-      // Show the SPECIFIC error from the backend to debug
-      const serverError = error.response?.data?.message || "Failed to send message. Please try again.";
-      setErrors(prev => ({ ...prev, submit: serverError }));
-      
-      setTimeout(() => setErrors(prev => ({ ...prev, submit: "" })), 10000);
-    }
+    }, 600);
   };
 
   const handleChange = (e) => {
